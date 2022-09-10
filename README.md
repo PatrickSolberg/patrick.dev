@@ -8,7 +8,7 @@
 - **Database**: [Supabase](https://supabase.com/)
 - **ORM**: [Prisma](https://prisma.io/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Authentication**: [Supabase Auth](https://supabase.com/auth)
+- **Authentication**: [Supabase Auth (Row Level Security)](https://supabase.com/auth)
 - **Content**: [Contentlayer](https://contentlayer.dev/)
 - **Deployment**: [Vercel](https://vercel.com/)
 - **Analytics**: [Umami](https://umami.is/)
