@@ -1,4 +1,4 @@
-# Create T3 <h1 align="center"><a href="https://www.nexxel.dev/" target="_blank">nexxel.dev</a></h1>
+# <h1 align="center"><a href="https://github.com/PatrickSolberg/patrick.dev" target="_blank">Øystensen.dev</a></h1>
 
 ## Stack
 
