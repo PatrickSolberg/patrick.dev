@@ -2,7 +2,8 @@
 import { httpBatchLink } from "@trpc/client/links/httpBatchLink";
 import { loggerLink } from "@trpc/client/links/loggerLink";
 import { withTRPC } from "@trpc/next";
-import { SessionProvider } from "next-auth/react";
+import { UserProvider } from '@supabase/auth-helpers-react'
+import { supabaseClient } from '@supabase/auth-helpers-nextjs'
 import type { AppType } from "next/dist/shared/lib/utils";
 import superjson from "superjson";
 import type { AppRouter } from "../server/router";
@@ -10,12 +11,12 @@ import "../styles/globals.css";
 
 const MyApp: AppType = ({
   Component,
-  pageProps: { session, ...pageProps },
+  pageProps: { ...pageProps },
 }) => {
   return (
-    <SessionProvider session={session}>
+    <UserProvider supabaseClient={supabaseClient}>
       <Component {...pageProps} />
-    </SessionProvider>
+    </UserProvider>
   );
 };
 
